@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
+.window{
+    background: #dddddd8c;
+    border-radius: 15px;
+    height: 650px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.top-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px 25px 10px;
+}
+.top-section input{
+    width: 200px;
+    text-indent: 10px;
+}
+.top-section #submit{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.top-section input,
+.top-section #submit{
+    height: 30px;
+    border: 0 none;
+    outline: 0 none;
+    border-radius: 5px;
+    background: #eee;
+}
+.bottom-section{
+    height: fit-content;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.todo-parent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.todo-parent .todotext{
+    width: 200px;
+    text-indent: 10px;
+    height: 30px;
+    border: 0 none;
+    outline: 0 none;
+    border-radius: 5px;
+    background: #dcdcdc;
+}
+.todo-parent .edit,
+.todo-parent .delete,
+.todo-parent .check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.todo-parent .edit{
+    background: rgb(170, 255, 252);
+}
+.todo-parent .delete{
+    background: rgb(255, 107, 107);
+}
+.todo-parent .check{
+    background: rgb(119, 255, 151);
+    right: 73px;
+    opacity: 0.3;
+}
+.window .done{
+    background: #fff;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0 3px 0;
+}
+.parent-dot{
+    height: 10px;
+    width: 10px;
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 750px;
+    display: none;
+}
+.fire{
+    height: 10px;
+    width: 10px;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+}
+.banner {
+    height: 150px;
+    padding: 0 80px;
+    background: #222;
+    opacity: 0.8;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    border-radius: 15px;
+    display: none;
+    bottom: 150px;
+}
+.info{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    bottom: 50px;
+    left: 50px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+.info h4{
+    padding: 0;
+    margin: 0;
+    color: red;
+}
